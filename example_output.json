@@ -1,0 +1,92 @@
+[
+  {
+    "Director": {
+      "UserId": "sofia.rodriguez@example.com",
+      "Preferred_because": "Sofia Rodriguez has extensive experience in Character Direction, Script Interpretation, Scene Analysis. They are based in Dubai and their rate fits within the budget.",
+      "user_details": {
+        "name": "Sofia Rodriguez",
+        "userid": "sofia.rodriguez@example.com",
+        "crew_type": "Film Crew",
+        "roleJobTitle": "Director",
+        "services": [
+          "Character Direction",
+          "Script Interpretation"
+        ],
+        "tags": [
+          "Director",
+          "Character Direction",
+          "Script Interpretation"
+        ],
+        "expertise": [
+          "Character Direction",
+          "Script Interpretation",
+          "Scene Analysis"
+        ],
+        "yoe": 9,
+        "minRatePerDay": 1050,
+        "maxRatePerDay": 1650,
+        "location": "Dubai"
+      }
+    }
+  },
+  {
+    "Producer": {
+      "UserId": "anastasia.ivanova@example.com",
+      "Preferred_because": "Anastasia Ivanova has extensive experience in Production Planning, Market Research, Client Relations. They are based in Dubai and their rate fits within the budget.",
+      "user_details": {
+        "name": "Anastasia Ivanova",
+        "userid": "anastasia.ivanova@example.com",
+        "crew_type": "Film Crew",
+        "roleJobTitle": "Producer",
+        "services": [
+          "Production Planning",
+          "Market Research"
+        ],
+        "tags": [
+          "Producer",
+          "Production Planning",
+          "Market Research"
+        ],
+        "expertise": [
+          "Production Planning",
+          "Market Research",
+          "Client Relations"
+        ],
+        "yoe": 7,
+        "minRatePerDay": 1000,
+        "maxRatePerDay": 1500,
+        "location": "Dubai"
+      }
+    }
+  },
+  {
+    "Camera Operator": {
+      "UserId": "yousef.alnassir@gmail.com",
+      "Preferred_because": "Yousef Al-Nassir has extensive experience in Steadicam Operation, Camera Movement, Technical Skills. They are based in Dubai and their rate fits within the budget.",
+      "user_details": {
+        "name": "Yousef Al-Nassir",
+        "userid": "yousef.alnassir@gmail.com",
+        "crew_type": "Film Crew",
+        "roleJobTitle": "Camera Operator",
+        "services": [
+          "Steadicam Operation",
+          "Camera Movement"
+        ],
+        "tags": [
+          "Film",
+          "Steadicam",
+          "Movement"
+        ],
+        "expertise": [
+          "Steadicam Operation",
+          "Camera Movement",
+          "Technical Skills"
+        ],
+        "yoe": 6,
+        "minRatePerDay": 540,
+        "maxRatePerDay": 790,
+        "location": "Dubai"
+      }
+    }
+  }
+]

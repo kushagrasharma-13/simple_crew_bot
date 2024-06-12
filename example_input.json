@@ -1,0 +1,21 @@
+{
+    "projectName": "New Film Project",
+    "contentType": "Feature Film",
+    "budget": 100000,
+    "description": "A new and exciting feature film.",
+    "additional_details": "Requires a top-notch crew.",
+    "locationDetails": [
+      {
+        "location": "Dubai",
+        "mode": "On-site",
+        "filming_permits": true
+      }
+    ],
+    "ai_suggestions": false,
+    "crew": {
+      "Producer": 1,
+      "Director": 1,
+      "Camera Operator": 2
+    }
+  }
+  
