@@ -31,21 +31,22 @@ class UserInput(BaseModel):
 
 # Sample crew database (mock data for demonstration)
 try:
+    print(os.getcwd())
     with open('crewdata.json', 'r') as f:
         crew_database = json.load(f)
 except FileNotFoundError:
-    raise FileNotFoundError("crewdata.json file not found")
+    raise FileNotFoundError("crewdata.json file not found", os.getcwd())
 
 def parse_user_input(user_input: UserInput):
     """Parse user input to extract relevant project details."""
     project_details = {
-        "projectName": user_input.projectName,
-        "contentType": user_input.contentType,
-        "budget": user_input.budget,
-        "description": user_input.description,
-        "additional_details": user_input.additional_details,
-        "locationDetails": user_input.locationDetails,
-        "crew": user_input.crew
+        "projectName": user_input['projectName'],
+        "contentType": user_input['contentType'],
+        "budget": user_input['budget'],
+        "description": user_input['description'],
+        "additional_details": user_input['additional_details'],
+        "locationDetails": user_input['locationDetails'],
+        "crew": user_input['crew']
     }
     return project_details
 
@@ -69,7 +70,7 @@ def generate_crew_output(selected_crew, role):
     }
     return output
 
-def generate_output_for_all_roles(user_input: UserInput, crew_database):
+def generate_output_for_all_roles(user_input: UserInput):
     """Generate the output for all required roles in the project."""
     project_details = parse_user_input(user_input)
     crew_output = []
@@ -82,17 +83,3 @@ def generate_output_for_all_roles(user_input: UserInput, crew_database):
     
     return crew_output
 
-@app.post("/crew-requirements/")
-def get_crew_requirements(user_input: UserInput):
-    """Endpoint to get crew requirements based on user input."""
-    try:
-        crew_output = generate_output_for_all_roles(user_input, crew_database)
-        return {"crew": crew_output}
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
-
-# To run the server, use: uvicorn crew_bot_api:app --reload
-
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="127.0.0.1", port=8000)
