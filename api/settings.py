@@ -123,3 +123,16 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+import os
+from pathlib import Path
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Base directory of the project
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+# Retrieve the OpenAI API key from the environment
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
