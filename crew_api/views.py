@@ -11,3 +11,6 @@ def get_crew_requirements(request):
         return Response({"crew": crew_output}, status=status.HTTP_200_OK)
     except Exception as e:
         return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+    
+def health_check(request):
+    return Response("OK", status=200)
