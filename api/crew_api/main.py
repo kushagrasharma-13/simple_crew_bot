@@ -1,13 +1,16 @@
 import os
 import json
 from typing import Dict, List
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI
 from pydantic import BaseModel
 from dotenv import load_dotenv
+from pathlib import Path
 
 load_dotenv()
 
 app = FastAPI()
+
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 openai_api_key = os.getenv('OPENAI_API_KEY')
 if not openai_api_key:
