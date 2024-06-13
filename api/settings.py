@@ -1,3 +1,4 @@
+import os
 """
 Django settings for api project.
 
@@ -126,7 +127,7 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-import os
+
 from pathlib import Path
 from dotenv import load_dotenv
 
