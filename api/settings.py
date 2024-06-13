@@ -22,9 +22,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-g@80*i^et466gmfz&!$98(4r_w6)b^wx%yfn1)q@vm9r81+2ya'
 
-# SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 ALLOWED_HOSTS = ['basic-crew-bot.azurewebsites.net']
+
+# Add this if not already there
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
 
