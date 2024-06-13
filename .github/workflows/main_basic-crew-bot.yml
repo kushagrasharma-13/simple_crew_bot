@@ -66,4 +66,4 @@ jobs:
         with:
           app-name: 'Basic-Crew-Bot'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7A0A0E09B66F47EA827C31A52EF7B14F }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BCA69FEB7E054E59B626F2C2A8F836A0 }}
