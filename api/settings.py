@@ -20,11 +20,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-g@80*i^et466gmfz&!$98(4r_w6)b^wx%yfn1)q@vm9r81+2ya'
+# # SECURITY WARNING: keep the secret key used in production secret!
+# SECRET_KEY = 'django-insecure-g@80*i^et466gmfz&!$98(4r_w6)b^wx%yfn1)q@vm9r81+2ya'
 
-DEBUG = False
-ALLOWED_HOSTS = ['basic-crew-bot.azurewebsites.net']
+DEBUG = True
+ALLOWED_HOSTS = ['*']
 
 # Add this if not already there
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
