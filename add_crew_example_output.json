@@ -1,0 +1,20 @@
+{
+  "id": 199,
+  "name": "example",
+  "userid": "example@example.com",
+  "crewType": "example",
+  "role": "example",
+  "services": [
+    "example"
+  ],
+  "tags": [
+    "example"
+  ],
+  "expertise": [
+    "example"
+  ],
+  "yoe": 0,
+  "minRatePerDay": "0.00",
+  "maxRatePerDay": "0.00",
+  "location": "example"
+}
