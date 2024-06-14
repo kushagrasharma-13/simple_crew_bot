@@ -1,21 +1,35 @@
 {
-    "projectName": "New Film Project",
-    "contentType": "Feature Film",
-    "budget": 100000,
-    "description": "A new and exciting feature film.",
-    "additional_details": "Requires a top-notch crew.",
+    "projectName": "Oasis",
+    "contentType": "Adventure Series",
+    "budget": 1500000,
+    "description": "A thrilling adventure series about a hidden oasis in the Arabian desert, to be shot in Dubai.",
+    "additional_details": "The series delves into ancient myths and modern-day explorers seeking lost treasures and untold riches.",
     "locationDetails": [
-      {
-        "location": "Dubai",
-        "mode": "On-site",
-        "filming_permits": true
-      }
+        {
+            "location": "Japan",
+            "start_date": "2024-06-12",
+            "end_date": "2024-06-28",
+
+            "mode": "indoor",
+            "filming_permits": true
+        },
+        {
+            "location": "Dubai",
+            "start_date": "2024-06-13",
+            "end_date": "2024-06-17",
+            "mode": "outdoor",
+            "filming_permits": false
+
+        }
     ],
-    "ai_suggestions": false,
+    "ai_suggestions": true,
     "crew": {
-      "Producer": 1,
-      "Director": 1,
-      "Camera Operator": 2
+        "Director": 1,
+        "Screenwriter": 2,
+        "Sound Designer": 3
+    },
+    "equipment": {
+        "Lighting Kit": 2,
+        "Microphone": 1
     }
-  }
-  
+}
