@@ -6,14 +6,6 @@
     "additional_details": "The series delves into ancient myths and modern-day explorers seeking lost treasures and untold riches.",
     "locationDetails": [
         {
-            "location": "Japan",
-            "start_date": "2024-06-12",
-            "end_date": "2024-06-28",
-
-            "mode": "indoor",
-            "filming_permits": true
-        },
-        {
             "location": "Dubai",
             "start_date": "2024-06-13",
             "end_date": "2024-06-17",
